@@ -1,1 +1,1 @@
-Data Analysis Project in Python and SQL
+Data Analysis Projects in Python and SQL
