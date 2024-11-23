@@ -1,4 +1,4 @@
-The following contains 10 queries analysing a digital media store database using MySQL
+-- The following contains 10 queries analysing a digital media store database using MySQL
 
 -- Find customers whose supporter employees from Calgary, sorted in descending order
 
@@ -59,14 +59,14 @@ SELECT customer.FirstName, invoice.Total, customer.Country from customer, invoic
     and Customer.Country='Germany' 
     and customer.Company is null
     and invoice.Total=(SELECT max(invoice.Total) from invoice 
-                      where invoice.BillingCountry='Germany')
+                      where invoice.BillingCountry='Germany');
 
 -- List the name of the employees who support more than 3 customers
 
 SELECT employee.LastName, COUNT(customer.CustomerId) as a from employee, customer
     where employee.EmployeeId=Customer.SupportRepId
     group by employee.LastName
-    having a >3
+    having a >3;
 
 -- Find the playlist(s) which contains most tracks by artist AC/DC? 
 
@@ -96,7 +96,7 @@ SELECT DISTINCT P.Name, COUNT(*) as count FROM Playlist P, PlaylistTrack PL,Trac
                                  AND track.AlbumId = album.Albumid
                                  AND album.ArtistId = artist.ArtistId
                                  AND Artist.Name='AC/DC'
-                                 GROUP BY P.Name)rana )
+                                 GROUP BY P.Name)rana );
 
 -- List the name of the artists with more than 5 tracks? 
 
