@@ -3,7 +3,7 @@
 
 A comprehensive collection of data analytics projects demonstrating expertise in Python, SQL, data visualization, and statistical analysis. This portfolio showcases the complete data analysis workflow from data cleaning and exploration to insightful visualization and reporting.
 
-## 🛠️ Technical Skills
+## Technical Skills
 
 ### Programming & Databases
 - **Python**: Pandas, NumPy, Matplotlib, Seaborn, Plotly, Scikit-learn
